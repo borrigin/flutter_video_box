@@ -1,3 +1,31 @@
+## 0.11.0 - 2020-2-26
+
+* 对网络的断开和重连进行了简单的优化
+* 增加API`addConnectivityChangedListener`可以监听网络状态的变更,当然您也可以直接使用`connectivity`包
+
+## 0.10.1 - 2020-2-19
+
+* 日常维护，升级依赖，并无api变动
+* 优化全屏时，监听设备的旋转
+
+## 0.10.0 - 2020-1-25
+
+- 增加API: 
+  - `options` 可以设置自定义参数
+  - `bottomViewBuilder` 用于自定义VideoBox底部视图
+
+## 0.9.1 - 2020-1-14
+
+* 删除平台差异 [#14](https://github.com/januwA/flutter_video_box/issues/14)
+* 删除部分作用不大方法和减少对外部暴露无用的方法。
+* 变更: `setLoop`=>`setLooping`，`loop`=>`looping`
+* 检查example的每个示例
+
+## 0.9.0 - 2020-1-9
+* 增加Api: `customLoadingWidget`  `customBufferedWidget`  `customFullScreen` `controllerLayerDuration`
+* 变更API: `onFullScreen`=>`onFullScreenSwitch` `controllerDuration`=> `controllerLiveDuration`
+* 添加画中画example
+
 ## 0.8.2 - 2019-12-25
 
 * `screen`依赖在打包时出现错误，删除此库，相关功能不可用

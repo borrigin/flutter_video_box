@@ -3,7 +3,7 @@ import 'package:video_box/video.controller.dart';
 import 'package:video_box/video_box.dart';
 import 'package:video_player/video_player.dart';
 
-import 'globals.dart';
+import '../globals.dart';
 
 class Videos extends StatefulWidget {
   @override
@@ -32,9 +32,7 @@ class _VideosState extends State<Videos> {
   }
 
   void _changeSource(String src) async {
-    vc.pause();
-    await Future.delayed(Duration(seconds: 2));
-    await vc.setSource(VideoPlayerController.network(src));
+    vc.setSource(VideoPlayerController.network(src));
     vc.setCover(Center(
         child: Text(
       src,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-import 'globals.dart';
+import '../globals.dart';
 
 class VideoPlayerDemo extends StatefulWidget {
   @override
@@ -48,7 +48,7 @@ class _VideoPlayerDemoState extends State<VideoPlayerDemo> {
           });
         },
         child: Icon(
-          _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
+          _controller.value.isPlaying ? Icons.pause : Icons.play_arrow
         ),
       ),
     );
